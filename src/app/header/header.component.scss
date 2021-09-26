@@ -1,0 +1,43 @@
+@use "partials/variables" as var;
+header {
+  background-color: var.$background-color;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10%;
+}
+
+.logo {
+  cursor: pointer;
+  text-transform: uppercase;
+  h1 {
+    color: white;
+  }
+}
+
+.nav__links {
+  list-style: none;
+}
+
+.nav__link-item {
+  display: inline-block;
+  padding: 0 20px;
+  a {
+    border-radius: 3px;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 5px 10px;
+  }
+  a:hover {
+    background-color: var.$blue;
+  }
+
+  .is-active {
+    background-color: var.$blue;
+  }
+}
